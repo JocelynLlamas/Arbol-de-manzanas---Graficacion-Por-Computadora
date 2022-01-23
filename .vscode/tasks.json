@@ -1,0 +1,43 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe compilar archivo activo",
+            "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                //"${file}",
+                "${fileDirname}/**.cpp",
+                "${fileDirname}/include/**.cpp",
+                "-IC:/Users/Jocelyn Llamas/Documents/UASLP/SEXTO SEMESTRE/GRAFICACION/1/include",
+                "-LC:/Users/Jocelyn Llamas/Documents/UASLP/SEXTO SEMESTRE/GRAFICACION/1/lib",
+                "-IC:/Users/Jocelyn Llamas/Documents/UASLP/SEXTO SEMESTRE/GRAFICACION/1/OPENGLFW/include",
+                "-LC:/Users/Jocelyn Llamas/Documents/UASLP/SEXTO SEMESTRE/GRAFICACION/1/OPENGLFW/lib-mingw-w64",
+                "-llibopenblas",
+                "-lglfw3",
+                "-lopengl32",
+                "-lglu32",
+                "-lWs2_32",
+                "-lole32",
+                "-lcomctl32",
+                "-lgdi32",
+                "-lcomdlg32",
+                "-luuid",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarea generada por el depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
